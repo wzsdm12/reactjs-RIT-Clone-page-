@@ -1,0 +1,40 @@
+/* Employment.css */
+.employment-table-container, .coop-table-container {
+  font-family: 'Arial', sans-serif;
+}
+
+.table-head {
+  background-color: black; /* Change header background color to black */
+}
+
+.table-head .MuiTableCell-head {
+  color: #fff; /* Header font color remains white */
+  font-size: 16px; /* Header font size */
+}
+
+.table-row .MuiTableCell-body {
+  font-size: 14px; /* Body font size */
+  color: #333; /* Body font color */
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.pagination button {
+  background-color: black; /* Change button background color to black */
+  color: #ffffff; /* Button text color remains white */
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #9e9e9e; /* Disabled button background color remains gray */
+}
+
+.pagination .page-info {
+  color: #333; /* Pagination info color */
+}

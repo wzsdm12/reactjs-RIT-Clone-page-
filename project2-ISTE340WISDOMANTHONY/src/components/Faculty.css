@@ -1,0 +1,91 @@
+/* Container for the entire Faculty component */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Styling for the header of the Faculty Information section */
+.container > h2 {
+  text-align: center;
+  color: #e37018; /* Or any color that fits your design */
+  margin-bottom: 30px;
+}
+
+/* Container for all faculty cards - Using Grid for responsive layout */
+.faculty-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Styling for each individual faculty card */
+.faculty-box {
+  background-color: #ffffff; /* Solid white for a card-like appearance */
+  border-radius: 15px; /* More pronounced curved edges */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px;
+  transition: transform 0.2s ease-in-out; /* Smooth scaling on hover */
+}
+
+.faculty-box:hover {
+  transform: translateY(-5px); /* Gentle lift effect on hover */
+}
+
+/* Styling for the faculty member's image */
+.faculty-image {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto; /* Centers the image */
+  display: block; /* Ensures the image is block level for margin auto to work */
+}
+
+/* Styling for the faculty member's name */
+.faculty-box h3 {
+  color: #007BFF; /* Color for names */
+  margin-bottom: 10px;
+}
+
+/* Styling for the faculty member's details */
+.faculty-box p {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* Filter Options Container */
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Adjust the color of filter options to orange */
+.filter-options button {
+  background-color: #e37018; /* Orange color */
+  color: #ffffff; /* Text color */
+  border: none;
+  border-radius: 20px; /* Rounded corners for a modern look */
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-options button:hover, .filter-options button:focus {
+  background-color: #b35b0b; /* Darker shade on hover/focus for interaction feedback */
+  outline: none; /* Remove focus outline for aesthetics */
+}
+
+.filter-options button.active {
+  background-color: #944d00; /* Even darker for the active state */
+}
+
+
+/* Adjust the CardContent to center the text and improve overall appearance */
+.MuiCardContent-root {
+  text-align: center;
+}
